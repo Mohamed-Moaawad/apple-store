@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #000, #333);
+    position: relative;
+}
+
+body::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(137, 63, 186, 0.724);
+    position: absolute;
+    clip-path: circle(40% at right 90%);
+    bottom: 0;
+    z-index: -1;
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+section .landing{
+    width: 67%;
+    height: 550px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: 2px solid;
+   /* margin-top: 0;*/
+    transform: translate(0, 25%);
+    border-radius: 25px;
+    border: 0px solid rgb(128, 93, 160);
+    box-shadow: 1px 1px 10px rgb(119, 80, 156);
+}
+
+
+.nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.nav .links{
+    margin-top: 20px;
+}
+
+.nav .links a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav .links a:hover{
+    color: blueviolet;
+    padding-right: 10px;
+}
+
+section .landing .text{
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+span{
+    color: rgb(176, 86, 237);
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.text .textp h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 40px;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(176, 86, 237);
+    border-radius: 20px;
+
+}
+button:hover{
+
+    box-shadow: 7px 7px 20px 5px rgb(114, 58, 151);
+    cursor: pointer;
+    color: #fff;
+}
+
+.h2{
+    color: #6B6275;
+    font-size: 100px;
+    position: absolute;
+    left: 450px;
+    top: 40px;
+}
+
+.h2 span{
+    color: rgb(176, 86, 237);
+    font-size: 90px;
+}
